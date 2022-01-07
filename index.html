@@ -4,9 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/css.css" />
+
+    <title>二郎ジェネレーター</title>
   </head>
   <body>
-    test
+    <h1>Jiro Generator</h1>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label for="subject"> にんにく </label>
+      <label class="btn btn-primary">
+        <input type="radio" name="garlic" id="garlic1" autocomplete="off" />無し
+      </label>
+      <label class="btn btn-primary">
+        <input
+          type="radio"
+          name="garlic"
+          id="garlic2"
+          autocomplete="off"
+        />少なめ
+      </label>
+      <label class="btn btn-primary">
+        <input
+          type="radio"
+          name="garlic"
+          id="garlic3"
+          autocomplete="off"
+        />入れる
+      </label>
+      <label class="btn btn-primary">
+        <input
+          type="radio"
+          name="garlic"
+          id="garlic4"
+          autocomplete="off"
+        />少し多め
+      </label>
+      <label class="btn btn-primary">
+        <input type="radio" name="garlic" id="garlic5" autocomplete="off" />多め
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="subject"> 野菜 </label>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-primary">
+          <input
+            type="radio"
+            name="vegetable"
+            id="vegetable1"
+            autocomplete="off"
+          />無し
+        </label>
+        <label class="btn btn-primary">
+          <input
+            type="radio"
+            name="vegetable"
+            id="vegetable2"
+            autocomplete="off"
+          />
+          少なめ
+        </label>
+        <label class="btn btn-primary">
+          <input
+            type="radio"
+            name="vegetable"
+            id="vegetable3"
+            autocomplete="off"
+          />
+          入れる
+        </label>
+        <label class="btn btn-primary">
+          <input
+            type="radio"
+            name="vegetable"
+            id="vegetable4"
+            autocomplete="off"
+          />
+          少し多め
+        </label>
+        <label class="btn btn-primary">
+          <input
+            type="radio"
+            name="vegetable"
+            id="vegetable5"
+            autocomplete="off"
+          />
+          多め
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="subject"> アブラ </label>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-primary">
+          <input type="radio" name="oil" id="oil1" autocomplete="off" />無し
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="oil" id="oil2" autocomplete="off" />
+          少なめ
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="oil" id="oil3" autocomplete="off" />
+          入れる
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="oil" id="oil4" autocomplete="off" />
+          少し多め
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="oil" id="oil5" autocomplete="off" />
+          多め
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="subject"> カラメ（濃いめ） </label>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-primary">
+          <input type="radio" name="spicy" id="spicy1" autocomplete="off" />薄め
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="spicy" id="spicy2" autocomplete="off" />
+          そのまま
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="spicy" id="spicy4" autocomplete="off" />
+          少しカラメ
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="spicy" id="spicy5" autocomplete="off" />
+          マシ
+        </label>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-success">呪文作成</button>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
